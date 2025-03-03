@@ -3,14 +3,17 @@ Cafe Menu Begin
 ----------------------------------------------------------------
 
 
-In this project, you will learn the basics of CSS (Cascading Style Sheets) by building a cafe menu. 
-CSS is the language used to style an HTML document. It describes how HTML elements should be displayed on the screen.
+In this project, you will learn the basics of CSS (Cascading Style Sheets) 
+by building a cafe menu. 
+CSS is the language used to style an HTML document. 
+It describes how HTML elements should be displayed on the screen.
 
 As you learned in the last few steps of the Cat Photo App, 
 there is a basic structure needed to start building your web page. 
 Every HTML document should have a DOCTYPE declaration and html element. 
 The DOCTYPE tells the browser which version of HTML the document is in. 
-And the html element represents the root element which contains all other elements.
+And the html element represents the root element which contains 
+all other elements.
 
 
 Example Code
@@ -19,7 +22,8 @@ Example Code
 <!--all other elements go here-->
 </html>
 
-You can add style to an element by specifying it in the style element and setting a property for it like this:
+You can add style to an element by specifying it in the style element 
+and setting a property for it like this:
 
 Example Code
 element {
@@ -32,19 +36,19 @@ A/ h1 {
       }
 
 In the previous step, you used a type selector to style the h1 element. 
-Center the content of the h2 and the p elements by adding a new type selector for each one to the existing style element.
+Center the content of the h2 and the p elements by adding a new type 
+selector for each one to the existing style element.
 
 A/ same as the previous question 
 
-You now have three type selectors with the exact same styling. You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas like this:
+You now have three type selectors with the exact same styling. 
+You can add the same group of styles to many elements by creating a list of 
+selectors. Each selector is separated with commas like this:
 
 Example Code
 selector1, selector2 {
   property: value;
 }
-
-Now that you have the CSS in the styles.css file, go ahead and remove the style element and all its content. 
-Once it is removed, the text that was centered will shift back to the left.
 
 Now that you have the CSS in the styles.css file, go ahead and remove the style element and all its content. 
 Once it is removed, the text that was centered will shift back to the left.
@@ -61,9 +65,11 @@ Example Code
 The text is centered again so the link to the CSS file is working. 
 Add another style to the file that changes the background-color property to brown for the body element.
 
-The div element is used mainly for design layout purposes unlike the other content elements you have used so far.
+The div element is used mainly for design layout purposes unlike 
+the other content elements you have used so far.
 
-The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this.
+The goal now is to make the div not take up the entire width of the page. 
+The CSS width property is perfect for this.
 
 You can use the id selector to target a specific element with an id attribute. 
 An id selector is defined by placing the hash symbol # directly in front of the element's id value. 
@@ -83,7 +89,8 @@ Example Code
 Now it's easy to see that the text is centered inside the #menu element. 
 Currently, the width of the #menu element is specified in pixels (px).
 
-Change the width property's value to be 80%, to make it 80% the width of its parent element (body).
+Change the width property's value to be 80%, 
+to make it 80% the width of its parent element (body).
 
 Next, you want to center the #menu horizontally. 
 You can do this by setting its margin-left and margin-right properties to auto. 
@@ -101,7 +108,8 @@ Example Code
   styles
 }
 
-Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
+Since the cafe's main product for sale is coffee, 
+you could use an image of coffee beans for the background of the page.
 
 Delete the comment and its contents inside the body type selector. 
 Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).
@@ -110,7 +118,8 @@ It’s looking good. Time to start adding some menu items.
 Add an empty article element under the Coffee heading. 
 It will contain a flavor and price of each coffee you currently offer.
 
-article elements commonly contain multiple elements that have related information. 
+article elements commonly contain multiple elements that have related 
+information. 
 In this case, it will contain a coffee flavor and a price for that flavor. 
 
 Starting below the existing coffee/price pair, 
@@ -124,31 +133,47 @@ Pumpkin Spice 3.50
 Hazelnut 4.00
 Mocha 4.50
 
-The flavors and prices are currently stacked on top of each other and centered with their respective p elements. 
-It would be nice if the flavor was on the left and the price was on the right.
+The flavors and prices are currently stacked on top of each other 
+and centered with their respective p elements. 
 
-Using your new flavor class as a selector, set the text-align property's value to left.
+It would be nice if the flavor was on the left and the price 
+was on the right.
 
-Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text.
+Using your new flavor class as a selector, 
+set the text-align property's value to left.
+
+Next, you want to align the price to the right. 
+Add a class named price to your p element that has 3.00 as its text.
 
 Now align the text to the right for the elements with the price class.
 
 
-That is kind of what you want, but now it would be nice if the flavor and price were on the same line. 
-p elements are block-level elements, so they take up the entire width of their parent element.
+That is kind of what you want, but now it would be nice if the flavor 
+and price were on the same line. 
+p elements are block-level elements, 
+so they take up the entire width of their parent element.
 
-To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements.
-To do that, start by adding a class attribute with the value item to the first article element under the Coffee heading.
+To get them on the same line, 
+you need to apply some styling to the p elements so they behave more like 
+inline elements.
+To do that, 
+start by adding a class attribute with the value item to the first article 
+element under the Coffee heading.
 
-You can give your menu some space between the content and the sides with various padding properties.
+You can give your menu some space between the content and the sides with 
+various padding properties.
 
-Give the menu class a padding-left and a padding-right with the same value 20px.
+Give the menu class a padding-left and a padding-right with the same 
+value 20px.
 
-That looks better. Now try to add the same 20px padding to the top and bottom of the menu.
+That looks better. 
+Now try to add the same 20px padding to the top and bottom of the menu.
 
 Since all 4 sides of the menu have the same internal spacing, 
-go ahead and delete the four properties and use a single padding property with the value 20px.
-basically padding : 20px ; will give 20px to the top, bottom, left and right padding
+go ahead and delete the four properties and use a single padding property 
+with the value 20px.
+basically padding : 20px ; 
+will give 20px to the top, bottom, left and right padding
 
 The current width of the menu will always take up 80% of the body element's width. 
 On a very wide screen, the coffee and dessert appear far apart from their prices.
