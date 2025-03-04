@@ -170,3 +170,5 @@ then we have an hr element
 then the footer
 that will include 2 p element , the first will be a nested p element inside the a
 and the next P will just be a a normal p element
+
+new text Nigga
